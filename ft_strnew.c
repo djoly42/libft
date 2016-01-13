@@ -6,7 +6,7 @@
 /*   By: djoly <marvin@42.fr>                       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/12/01 18:30:49 by djoly             #+#    #+#             */
-/*   Updated: 2015/12/30 11:27:57 by djoly            ###   ########.fr       */
+/*   Updated: 2016/01/13 16:40:40 by djoly            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,8 @@
 
 char	*ft_strnew(size_t size)
 {
-	size_t	i;
 	char	*ret;
 
-	i = 0;
 	ret = (char *)malloc(sizeof(char) * size + 1);
 	if (!ret)
 		return (NULL);

@@ -6,7 +6,7 @@
 #    By: djoly <marvin@42.fr>                       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2015/11/26 20:56:48 by djoly             #+#    #+#              #
-#    Updated: 2015/12/02 17:53:52 by djoly            ###   ########.fr        #
+#    Updated: 2016/01/13 16:43:42 by djoly            ###   ########.fr        #
 #                                                                              #
 #******************************************************************************#
 
@@ -16,7 +16,7 @@ CFLAGS=-Wall -Wextra -Werror
 
 RM=rm -f
 
-HDDIRS=-I./
+HDDIRS=-I includes/
 
 SRC=ft_memset.c ft_bzero.c ft_memcpy.c  ft_memccpy.c \
 ft_memmove.c ft_memchr.c ft_memcmp.c ft_memalloc.c \
@@ -51,3 +51,5 @@ fclean: clean
 	$(RM) $(NAME)
 
 re: fclean all
+
+.PHONY : all re clean fclean
